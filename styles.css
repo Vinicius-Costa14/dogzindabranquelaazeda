@@ -1,0 +1,189 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/vetores-premium/fundo-de-nuvens-de-algodao-de-acucar-rosa-aquarela_23-2149248516.jpg?ga=GA1.1.471058544.1718307569&semt=ais_user'); /* Nome da imagem de nuvens */
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #f7e8ec;
+    border: 2px solid hsl(0, 0%, 97%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#photo {
+    width: 200px;
+    cursor: pointer;
+    border: 3px solid #e7d9e0;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#photo:hover {
+    transform: scale(1.05);
+}
+
+#click-here {
+    font-size: 18px;
+    color: #6d84c4;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #3a83f0;
+}
+
+#message {
+    font-size: 24px;
+    color: #e2c7d2;
+    margin-top: 20px;
+    background-color: #64b3f3;
+    padding: 10px;
+    border: 2px solid #7083ee;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    text-shadow: 1px 1px 2px #568ace;
+}
+
+#message.show {
+    opacity: 1;
+}
+/* Estilo do coração animado */
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+#heart-animation {
+    position: absolute;
+    pointer-events: none; /* Não interfere com cliques */
+    width: 600px;
+    height: 600px;
+    background: url('3a0b93b4bb41b7fffb59c46ef21f26-unscreen.gif') no-repeat center center;
+    background-size: contain;
+    animation: heartBeat 3s forwards;
+}
+audio {
+    display: none; /* Esconde o elemento de áudio */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/vetores-premium/ceu-azul-com-nuvens-brancas-em-estilo-plano-ilustracao-vetorial-de-atmosfera-arejada-em-fundo-isolado-conceito-de-negocio-de-sinalizacao-da-natureza_157943-35012.jpg?size=626&ext=jpg&ga=GA1.1.471058544.1718307569&semt=ais_user'); /* Nome da imagem de nuvens */
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #5b83ce;
+    border: 2px solid hsl(334, 19%, 93%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#photo {
+    width: 200px;
+    cursor: pointer;
+    border: 3px solid #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#photo:hover {
+    transform: scale(1.05);
+}
+
+#click-here {
+    font-size: 18px;
+    color: #97b5e0;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #2a5eee;
+}
+
+#message {
+    font-size: 24px;
+    color: #aabbd1;
+    margin-top: 20px;
+    background-color: #4587dd;
+    padding: 10px;
+    border: 2px solid #e7ebee;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    text-shadow: 1px 1px 2px #274beb;
+}
+
+#message.show {
+    opacity: 1;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #photo {
+        width: 150px;
+    }
+
+    #click-here {
+        font-size: 16px;
+    }
+
+    #message {
+        font-size: 20px;
+        padding: 8px;
+    }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    #photo {
+        width: 120px;
+    }
+
+    #click-here {
+        font-size: 14px;
+    }
+
+    #message {
+        font-size: 18px;
+        padding: 5px;
+    }
+}
